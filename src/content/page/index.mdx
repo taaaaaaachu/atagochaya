@@ -1,6 +1,6 @@
 ---
-title: 愛宕茶屋
-description: 愛宕茶屋のホームページです。
+title: トップページ
+description: 宕山アナタリューのホームページです。
 intro: 最高のお茶をお届けします。
 style:
   hero_template: image
@@ -12,7 +12,7 @@ style:
   hero_surface: surface-dark
   hero_image_opacity: ""
   nav_color: light
-thumbnail: /src/assets/speed.jpeg
+thumbnail: src/assets/hero.jpeg
 pubDate: Jul 08 2022
 hero:
   media:
@@ -35,10 +35,7 @@ hero:
     - icon_only: false
       label: もっと見る
       href: "#more"
-    - icon_only: false
-      label: お問い合わせ
-      color: surface-transparent
-      href: "#contact"
+
 blocks:
   - type: features
     component: Features
@@ -48,28 +45,28 @@ blocks:
     features:
       - content: >
           愛宕茶屋は愛宕山の登り口に位置しており、登山者が疲れた体を休め、リフレッシュできる場所です。山の自然に囲まれた落ち着いた空間で、お茶や軽食を楽しみながら一息つけます。
-        icon: /src/icons/tailwind.svg
+        icon: /src/icons/forest.svg
         color: surface-secondary
         title: 登山者の休憩所
-      - icon: /src/icons/phone.svg
+      - icon: /src/icons/forest.svg
         content: >
           愛宕茶屋は地域のコミュニティの場としても機能します。愛宕山を訪れる地元の方や観光客が集い、交流や情報交換が行える場所です。登山後の集いやイベント開催、地域の交流の拠点として活用されます。
         color: surface-secondary
         href: ""
         title: コミュニティの拠点
       - color: surface-secondary
-        icon: /src/icons/email.svg
+        icon: /src/icons/forest.svg
         content: >
           愛宕茶屋は愛宕山の魅力を広く発信する拠点でもあります。愛宕山の歴史や文化、自然の美しさを伝えながら、訪れる人々に地域の魅力を体験してもらいます。
         title: 愛宕山の魅力を発信
-      - icon: /src/icons/blocks-group-solid.svg
+      - icon: /src/icons/forest.svg
         content: >
           お茶屋の内装や雰囲気は心地よく、リラックスできる空間を提供します。山の景色や自然を感じながら、訪れる人々が日常の喧騒から離れ、くつろぎの時間を過ごせるよう工夫されています。
         color: surface-secondary
         href: ""
         title: 心地よい空間の提供
       - href: "#"
-        icon: /src/icons/git.svg
+        icon: /src/icons/forest.svg
         content: >
           地域と愛宕山を訪れる方々との交流を促進します。地域の方々との協力を通じて、愛宕茶屋が地域コミュニティの拠点となり、地域活性化に貢献していきます。
         color: surface-secondary
@@ -77,7 +74,7 @@ blocks:
       - content: >
           愛宕茶屋にはお茶室があり、外国からの訪問者も日本の伝統文化に触れることができます。静かな雰囲気の中で、茶道体験を通じて日本茶の深い世界を感じていただけます。愛宕山の自然と日本の文化が調和する場所で、心豊かなひとときを過ごしませんか。
         color: surface-secondary
-        icon: /src/icons/dark-theme-20-filled.svg
+        icon: /src/icons/forest.svg
         title: お茶室
     content: |+
       ## 愛宕山アナタリューの特徴
@@ -367,126 +364,5 @@ blocks:
 
        **愛宕山には愛宕神社（あたごじんじゃ）があり、火の神が祀られています。愛宕神社は火災や厄災除けの神として信仰を集めており、京都でも有名な火伏せの神社として知られています。**
 
-
-      
-  
-  - type: recentitems
-    component: RecentItems
-    page_type: blog
-    count: 4
-    style:
-      container: md
-      animate: true
-      surface: surface-dark
-    post_tag:
-      - Docs
-    title: Check out our documentation
-    content: >
-      Getting started is easy, just clone the repo, configure and you are ready
-      to go.
-  - type: faq
-    component: Faq
-    title: FAQ's
-    style:
-      container: md
-    id: a3f164ee-e7bd-48c2-a118-0233f7d02b1b
-    items:
-      - id: 6687141f-b8ce-4d67-ba1f-cf838551eb02
-        title: Where can I host StarFunnel?
-        description: >
-          StarFunnel can be easily hosted on [Netlify](https://www.netlify.com/)
-          out of the box. If you prefer a different platform, you'll need to
-          deploy and link edge functions to ensure that the forms continue to
-          function seamlessly.
-      - id: 03c89715-772a-4d6d-8e07-589f8be149d9
-        title: What newsletter platforms are supported?
-        description: >
-          Currently, StarFunnel integrates with [MailChimp
-          ](https://mailchimp.com/) for newsletter services.
-      - id: 13236024-260c-4df9-8026-8979f92acffa
-        title: How is the contact form handled?
-        description: >
-          The contact form submissions can be received through
-          [Postmark](https://postmarkapp.com/) or
-          [MailGun](https://www.mailgun.com/) Alternatively, you can set it up
-          to post directly to a [Slack](https://slack.com/) channel.
-      - id: b9b4dbd5-e4e3-4653-be11-59686c752f03
-        title: How does the contact form topic feature work?
-        description: >
-          StarFunnel's contact form supports multiple topics, allowing you to
-          connect a unique email or Slack channel to each specific topic.
-      - id: 4060ab29-325f-40b4-8013-3981bb6054b4
-        title: Is StarFunnel's landing page builder free?
-        description: >+
-          Yes, StarFunnel's landing page builder is released under the [CC BY
-          4.0 License](/license)
-
-      - id: adc5ac8b-4406-475a-9e08-c1781d4cbc74
-        title: Can I remove the attribution?
-        description: >
-          If you wish to remove the attribution, you have the option to purchase
-          a [license](https://nebulix.unfolding.io/shop/starfunnel-license/) for $149.95 USD.
-      - id: d89f61b4-0e72-40f0-9a08-d424752f4474
-        title: Does StarFunnel come with a CMS?
-        description: >
-          Yes, StarFunnel is built on [Static CMS](https://www.staticcms.org/)
-          an open-source CMS based on Git that supports multiple users.
-      - id: 2a8db3a9-2daf-4f75-a493-c3964454f7b0
-        title: Does StarFunnel come with user login functionality?
-        description: >
-          While StarFunnel provides forms and a starter edge function to help
-          you begin, it doesn't include the authentication logic or platform.
-          You'll need to implement your authentication system or integrate with
-          a third-party authentication service to enable user accounts and
-          redirects.
-  - type: popup
-    component: AnnoyingPopup
-    timing:
-      delay: 1
-      duration: 7
-      on_load: false
-    content: |
-      ## Need help with kickstarting your project!
-
-      Get in touch with us and we will help you get started, now with 20% off.
-    code: GET-HELP-NOW
-    style:
-      surface: surface-dark
-    media:
-      thumbnail: /src/assets/popups.jpeg
-      image_opacity: "0.3"
-    buttons:
-      - icon_only: false
-        label: More info
-        href: /kickstart-your-project
-    link: annoying-popup
-  - type: text_media
-    component: TextMedia
-    style:
-      container: none
-      template: banner
-      reverse: true
-      animate: true
-      block_class: my-0
-      image_opacity: ""
-    content: >
-      ## Anoying Popups
-
-
-      Add popups on page load or scroll location, you can set a delay and even duration!
-    media:
-      thumbnail: /src/assets/popups.jpeg
-      aspect: ""
-      image_size: ""
-      title: Image
-      embed: youtube
-      image_opacity: "0.5"
-    buttons:
-      - icon_only: false
-        label: Open Popup
-        href: "#annoying-popup"
-        icon: /src/icons/shop.svg
-        color: surface-primary
-    block_class: py-20 text-center
-og_image: /src/assets/og_image_starfunnel.jpg
+og_image: src/assets/hero.jpeg
 ---
