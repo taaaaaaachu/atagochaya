@@ -30,7 +30,7 @@
 import { ref, watch } from "vue";
 
 import "plyr/dist/plyr.css";
-import Plyr from "plyr";
+
 import { useStore } from "@nanostores/vue";
 import { showVideo } from "@src/store";
 
@@ -60,6 +60,8 @@ const pauseVideo = () => {
   });
   if (videoPlayer.value) videoPlayer.value.pause();
 };
+
+onMount(() => {const Plyr = import('plyr')});
 
 const playVideo = () => {
   /* allowCookie.value = checkCookie(); */
