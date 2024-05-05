@@ -13,7 +13,7 @@
   "description": "Fast & Green Sales Funnel Theme Based on Astro + Static CMS. ",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
