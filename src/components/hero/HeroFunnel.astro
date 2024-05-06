@@ -24,6 +24,7 @@ const mediaClass = () => {
   if (hero.media.aspect == 0.5625) return "aspect-9/16";
   return "";
 };
+const hasIcon = !!hero?.media?.Icon?.trim();
 ---
 
 {
@@ -146,7 +147,7 @@ const mediaClass = () => {
                       loading="eager"
                       breakpoints={[420, 725, 960]}
                     />
-                    {hasEmbed && (
+                    {hasEmbed && hasIcon && (
                       <div class="absolute inset-0  z-50  grid place-items-center">
                         <Icon
                           name="play"
