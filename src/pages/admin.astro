@@ -19,7 +19,11 @@ const config = {
   logo_url: "https://starfunnel.unfolding.io/logo.svg",
   local_backend: true,
   backend: {
-    name: "test-repo",
+    name: "git-gateway",
+    repo: "atagochaya",
+    branch: "main",
+    auth_type: "pkce",
+    cms_label_prefix: "cms/",
   },
   search: true,
   media_folder: "src/assets",
