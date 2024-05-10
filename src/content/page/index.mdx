@@ -2,7 +2,6 @@
 title: トップページ
 description: 愛宕山アナタリューのホームページです。
 intro: 最高のお茶をお届けします。
-
 style:
   hero_template: image
   template: full
@@ -15,7 +14,6 @@ style:
   nav_color: light
 thumbnail: src/assets/hero.jpeg
 pubDate: Jul 08 2022
-
 hero:
   media:
     thumbnail: src/assets/video/VideoThumbnail.jpg
@@ -30,100 +28,105 @@ hero:
     image_opacity: 0.5
     container: xl
     surface: surface-dark
+    background: plain
   title: |
     愛宕山アナタリュー
-  intro: >
+  intro: |
     愛宕山で出会う、ほっとするひととき
   buttons:
     - icon_only: false
       label: もっと見る
       href: "#more"
-
 blocks:
+  - type: recentitems
+    component: RecentItems
+    count: 5
+    style:
+      surface: surface-light
+      
   - type: features
     component: Features
     style:
       container: lg
+      template: column
+      reverse: false
       block_class: py-20
-    features:
-      - content: >
-          愛宕山アナタリューは愛宕山の登り口に位置しており、登山者が疲れた体を休め、リフレッシュできる場所です。山の自然に囲まれた落ち着いた空間で、一息つけます。
-        icon: /src/icons/forest.svg
-        color: surface-secondary
-        title: 登山者の休憩所
-      - icon: /src/icons/forest.svg
-        content: >
-          愛宕山アナタリューは地域のコミュニティの場としても機能します。愛宕山を訪れる地元の方や観光客が集い、交流や情報交換が行える場所です。登山後の集いやイベント開催、地域の交流の拠点として活用されます。
-        color: surface-secondary
-        href: ""
-        title: コミュニティの拠点
-      - color: surface-secondary
-        icon: /src/icons/forest.svg
-        content: >
-          愛宕山アナタリューは愛宕山の魅力を広く発信する拠点でもあります。愛宕山の歴史や文化、自然の美しさを伝えながら、訪れる人々に地域の魅力を体験してもらいます。
-        title: 愛宕山の魅力を発信
-      - icon: /src/icons/forest.svg
-        content: >
-          和室の内装や雰囲気は心地よく、リラックスできる空間を提供します。山の景色や自然を感じながら、訪れる人々が日常の喧騒から離れ、くつろぎの時間を過ごせるよう工夫されています。
-        color: surface-secondary
-        href: ""
-        title: 心地よい空間の提供
-      - href: "#"
-        icon: /src/icons/forest.svg
-        content: >
-          地域と愛宕山を訪れる方々との交流を促進します。地域の方々との協力を通じて、愛宕山アナタリューが地域コミュニティの拠点となり、地域活性化に貢献していきます。
-        color: surface-secondary
-        title: 地域との連携
-      - content: >
-          愛宕山アナタリューには和室があり、外国からの訪問者も日本の伝統文化に触れることができます。愛宕山の自然と日本の文化が調和する場所で、心豊かなひとときを過ごしませんか。
-        color: surface-secondary
-        icon: /src/icons/forest.svg
-        title: 和室
+      surface: surface-light
+    media:
+      image_size: "50"
+      title: Image
+      image_opacity: "80"
+      embed: youtube
     content: |+
       ## 愛宕山アナタリューの特徴
 
+    features:
+      - title: 登山者の休憩所
+        color: surface-secondary
+        icon: /src/icons/forest.svg
+        content: >
+          愛宕山アナタリューは愛宕山の登り口に位置しており、登山者が疲れた体を休め、リフレッシュできる場所です。山の自然に囲まれた落ち着いた空間で、一息つけます。
+      - title: コミュニティの拠点
+        color: surface-secondary
+        icon: /src/icons/forest.svg
+        content: >
+          愛宕山アナタリューは地域のコミュニティの場としても機能します。愛宕山を訪れる地元の方や観光客が集い、交流や情報交換が行える場所です。登山後の集いやイベント開催、地域の交流の拠点として活用されます。
+      - title: 愛宕山の魅力を発信
+        color: surface-secondary
+        icon: /src/icons/forest.svg
+        content: >
+          愛宕山アナタリューは愛宕山の魅力を広く発信する拠点でもあります。愛宕山の歴史や文化、自然の美しさを伝えながら、訪れる人々に地域の魅力を体験してもらいます。
+      - title: 心地よい空間の提供
+        color: surface-secondary
+        icon: /src/icons/forest.svg
+        content: >
+          和室の内装や雰囲気は心地よく、リラックスできる空間を提供します。山の景色や自然を感じながら、訪れる人々が日常の喧騒から離れ、くつろぎの時間を過ごせるよう工夫されています。
+      - title: 地域との連携
+        color: surface-secondary
+        icon: /src/icons/forest.svg
+        content: >
+          地域と愛宕山を訪れる方々との交流を促進します。地域の方々との協力を通じて、愛宕山アナタリューが地域コミュニティの拠点となり、地域活性化に貢献していきます。
+      - title: 和室
+        color: surface-secondary
+        icon: /src/icons/forest.svg
+        content: >
+          愛宕山アナタリューには和室があり、外国からの訪問者も日本の伝統文化に触れることができます。愛宕山の自然と日本の文化が調和する場所で、心豊かなひとときを過ごしませんか。
+
   - type: text_media
     component: TextMedia
     style:
       container: md
       template: column
       reverse: true
-      animate: false
-      block_class: ""
-      image_opacity: ""
     media:
-      image_size: "66"
+      image_size: "50"
+      title: Image
+      image_opacity: ""
+      embed: ""
       thumbnail: /src/assets/atagodescription/atagodescription_1.jpeg
-      title: Image
-      embed: youtube
-      image_opacity: ""
-    content: >-
-       二の鳥居  
-       
+    content: >+
+      二の鳥居
 
-       **清滝の二の鳥居から愛宕山登山が始まります。最初はきつい坂道ですが、自然の中での挑戦が楽しいです。森の中の鳥のさえずりや景色を楽しみながら、頂上を目指して一歩ずつ進みましょう。愛宕山登山はワクワク感がいっぱいの体験です。**
+
+      **清滝の二の鳥居から愛宕山登山が始まります。最初はきつい坂道ですが、自然の中での挑戦が楽しいです。森の中の鳥のさえずりや景色を楽しみながら、頂上を目指して一歩ずつ進みましょう。愛宕山登山はワクワク感がいっぱいの体験です。**
 
   - type: text_media
     component: TextMedia
     style:
-      container: lg
+      container: md
       template: column
       reverse: false
-      animate: false
-      block_class: pb-14
-      image_opacity: ""
     media:
-      image_size: "66"
+      image_size: "50"
       title: Image
-      aspect: 1.777
-      thumbnail: /src/assets/atagodescription/atagodescription_2.jpeg
-      embed: youtube
       image_opacity: ""
-    content: >
-      お助け水  
-       
+      embed: ""
+      thumbnail: /src/assets/atagodescription/atagodescription_2.jpeg
+    content: >+
+      お助け水
 
-       **急な登り坂を登り終えると、嬉しいお助け水が現れます。ここで深呼吸をして、体力を回復させましょう。そして、再び道を進んで頂上を目指しましょう。この休憩ポイントで新たなエネルギーをチャージして、頑張って登り続けましょう！**
+
+      **急な登り坂を登り終えると、嬉しいお助け水が現れます。ここで深呼吸をして、体力を回復させましょう。そして、再び道を進んで頂上を目指しましょう。この休憩ポイントで新たなエネルギーをチャージして、頑張って登り続けましょう！**
 
   - type: text_media
     component: TextMedia
@@ -131,39 +134,32 @@ blocks:
       container: md
       template: column
       reverse: true
-      animate: false
-      block_class: ""
-      image_opacity: ""
     media:
-      image_size: "66"
-      thumbnail: /src/assets/atagodescription/atagodescription_3.jpeg
+      image_size: "50"
       title: Image
-      embed: youtube
       image_opacity: ""
-    content: >-
+      embed: ""
+      thumbnail: /src/assets/atagodescription/atagodescription_3.jpeg
+    content: >+
       燧権現
-       
 
-       **愛宕山の燧権現は山中に位置する神社で、愛宕山の中腹にある重要な信仰対象です。燧権現は火の神として知られ、火災や災厄からの守り神として信仰されています。山岳信仰の一環として、登山者の安全や無事を祈願する場所として、多くの人々に親しまれています。**
+
+      **愛宕山の燧権現は山中に位置する神社で、愛宕山の中腹にある重要な信仰対象です。燧権現は火の神として知られ、火災や災厄からの守り神として信仰されています。山岳信仰の一環として、登山者の安全や無事を祈願する場所として、多くの人々に親しまれています。**
 
   - type: text_media
     component: TextMedia
     style:
-      container: lg
+      container: md
       template: column
       reverse: false
-      animate: false
-      block_class: pb-14
-      image_opacity: ""
     media:
-      image_size: "66"
+      image_size: "50"
       title: Image
-      aspect: 2
-      thumbnail: /src/assets/atagodescription/atagodescription_4.jpeg
-      embed: youtube
       image_opacity: ""
-    content: >
-       **険しい登山道ですが、一歩一歩進むごとに着実に前進していることに気づくでしょう。自分自身の成長を感じ、自然の中での体験が心を豊かにします。また、同じ道を歩む他の登山者との出会いや交流も、登山の楽しみの一つです。**
+      embed: ""
+      thumbnail: /src/assets/atagodescription/atagodescription_4.jpeg
+    content: >+
+      **険しい登山道ですが、一歩一歩進むごとに着実に前進していることに気づくでしょう。自分自身の成長を感じ、自然の中での体験が心を豊かにします。また、同じ道を歩む他の登山者との出会いや交流も、登山の楽しみの一つです。**
 
   - type: text_media
     component: TextMedia
@@ -179,10 +175,10 @@ blocks:
       title: Image
       aspect: 1.777
       thumbnail: /src/assets/atagodescription/atagodescription_5.jpeg
-      embed: youtube
       image_opacity: ""
+      embed: ""
     content: >
-       **登山道にはたくさんの休憩スポットがありますので、ゆっくりと進みながら必要に応じて休んでください。自然の中で休息をとると心身ともにリフレッシュされます。風や木々のざわめき、鳥のさえずりを感じながら、その美しい景色を楽しみながら進んでいけば、自然の力に癒やされることでしょう。**
+      **登山道にはたくさんの休憩スポットがありますので、ゆっくりと進みながら必要に応じて休んでください。自然の中で休息をとると心身ともにリフレッシュされます。風や木々のざわめき、鳥のさえずりを感じながら、その美しい景色を楽しみながら進んでいけば、自然の力に癒やされることでしょう。**
 
   - type: text_media
     component: TextMedia
@@ -198,8 +194,8 @@ blocks:
       title: Image
       aspect: 1.777
       thumbnail: /src/assets/atagodescription/atagodescription_6.jpeg
-      embed: youtube
       image_opacity: ""
+      embed: ""
     content: >
       お地蔵さん
        
@@ -219,8 +215,8 @@ blocks:
       image_size: "66"
       thumbnail: /src/assets/atagodescription/atagodescription_7.jpeg
       title: Image
-      embed: youtube
       image_opacity: ""
+      embed: ""
     content: >-
       五合目
        
@@ -242,6 +238,7 @@ blocks:
       aspect: 1
       thumbnail: /src/assets/atagodescription/atagodescription_8copy.jpeg
       image_opacity: ""
+      embed: ""
     content: >
       表参道
        
@@ -249,6 +246,7 @@ blocks:
        **愛宕山には月輪寺コースや水尾に通じるコース、そして亀岡につながるコースなどがあります。その中でも表参道は、急な登りもありますが、わかりやすいコースなので初心者におすすめです。**
        
        **周囲の自然や景色を楽しみながら、愛宕山の魅力を存分に味わってください。**
+    count: 5
 
   - type: text_media
     component: TextMedia
@@ -263,16 +261,15 @@ blocks:
       image_size: "66"
       thumbnail: /src/assets/atagodescription/atagodescription_9.jpeg
       title: Image
-      embed: youtube
       image_opacity: ""
-    content: >-
+      embed: youtube
+    content: |
       黒門
-       
 
-       **黒門に到着すると、そこは神社の入口です。この門をくぐると、愛宕山の神聖な空間が広がります。これまでの道のり、お疲れ様でした。**
-       
-       **黒門は一見神社の門のように見えますが、実はかつてのお寺の門です神仏習合だった愛宕山の名残がこの門にあります。**
+      **黒門に到着すると、そこは神社の入口です。この門をくぐると、愛宕山の神聖な空間が広がります。これまでの道のり、お疲れ様でした。**
 
+      **黒門は一見神社の門のように見えますが、実はかつてのお寺の門です神仏習合だった愛宕山の名残がこの門にあります。**
+      
   - type: text_media
     component: TextMedia
     style:
@@ -285,11 +282,12 @@ blocks:
     media:
       image_size: "66"
       title: Image
-      aspect: 2
+      aspect: ""
       thumbnail: /src/assets/atagodescription/atagodescription_10.jpeg
-      embed: youtube
       image_opacity: ""
-    content: >
+      embed: youtube
+    content: "\n\n\n"
+    buttons: []
 
   - type: text_media
     component: TextMedia
@@ -305,31 +303,27 @@ blocks:
       title: Image
       aspect: 1.777
       thumbnail: /src/assets/atagodescription/atagodescription_11.jpeg
-      embed: youtube
       image_opacity: ""
-    content: >
+      embed: ""
+    content: "\n\n\n"
+    count: 5
 
   - type: text_media
     component: TextMedia
     style:
-      container: lg
+      container: md
       template: column
       reverse: false
-      animate: false
-      block_class: pb-14
-      image_opacity: ""
     media:
-      image_size: "66"
+      image_size: "50"
       title: Image
-      aspect: 1.777
-      thumbnail: /src/assets/atagodescription/atagodescription_12.jpeg
-      embed: youtube
       image_opacity: ""
+      embed: youtube
+      thumbnail: /src/assets/atagodescription/atagodescription_12.jpeg
     content: >
       愛宕神社
-       
 
-       **愛宕山には愛宕神社（あたごじんじゃ）があり、火の神が祀られています。愛宕神社は火災や厄災除けの神として信仰を集めており、京都でも有名な火伏せの神社として知られています。**
 
-og_image: src/assets/hero.jpeg
+      **愛宕山には愛宕神社（あたごじんじゃ）があり、火の神が祀られています。愛宕神社は火災や厄災除けの神として信仰を集めており、京都でも有名な火伏せの神社として知られています。**
+og_image: /src/assets/hero.jpeg
 ---
